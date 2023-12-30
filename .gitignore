@@ -1,3 +1,4 @@
 *.pages
 /eyes-exercise/
 /real-time-bus-trecker/
+.DS_Store
