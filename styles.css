@@ -1,5 +1,5 @@
 
-nav {
+nav,footer {
   filter: opacity(50%);
 }
 
@@ -14,6 +14,13 @@ a {
 a:hover {
   color: white;
 }
+
+#contacts a:hover svg {
+  fill: black !important;
+}
+
+
+
 
 .grid-container2 {
   align-self: center;
@@ -82,24 +89,25 @@ a:hover {
   opacity: 0;
   margin: 0;
   position:absolute;
-  top: 25%;
+  /* top: 25%;
   left: 25%;
   -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
 }
 
 .container {
   background-color: #ffffff0f;
   place-items: center;
+  align-content: center;
 }
 
-.container:hover .image {
+/* .container:hover .image {
   opacity: 0.3;
 }
 
 .container:hover .hoverButton {
   opacity: 1;
-}
+} */
 
 
 .textBio {
@@ -138,4 +146,8 @@ a:hover {
 
 #scrollToTopBtn:hover {
   background-color: #555; /* Add a dark-grey background on hover */
+}
+
+#contacts {
+  padding-right: 75px;
 }
