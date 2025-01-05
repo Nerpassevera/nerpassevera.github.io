@@ -1,7 +1,3 @@
-$("#videoModal").on('hidden.bs.modal', function (e) {
-    $("#videoModal iframe").attr("src", $("#videoModal iframe").attr("src"));
-});
-
 // Get the button:
 let mybutton = document.getElementById("scrollToTopBtn");
 

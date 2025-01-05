@@ -1,6 +1,7 @@
-
-nav,footer {
+nav,
+footer {
   filter: opacity(50%);
+
 }
 
 body {
@@ -8,7 +9,7 @@ body {
 }
 
 a {
-  color: #9FAAA6; 
+  color: #9faaa6;
 }
 
 a:hover {
@@ -19,8 +20,9 @@ a:hover {
   fill: black !important;
 }
 
-
-
+.nav-link {
+  font-size: large;
+}
 
 .grid-container2 {
   align-self: center;
@@ -29,14 +31,16 @@ a:hover {
   grid-template-columns: minmax(200px, 535px) minmax(200px, 535px);
   position: relative;
   gap: 20px;
-
 }
 
 .grid-container3 {
   align-self: center;
   display: grid;
   justify-content: center;
-  grid-template-columns: minmax(290px, 350px) minmax(290px, 350px) minmax(290px, 350px);
+  grid-template-columns: minmax(290px, 350px) minmax(290px, 350px) minmax(
+      290px,
+      350px
+    );
   position: relative;
   gap: 20px;
 }
@@ -47,9 +51,9 @@ a:hover {
   grid-template-columns: 1fr 3fr;
   grid-template-rows: auto auto auto;
   grid-template-areas:
-  "img name"
-  "img description"
-  "img button";
+    "img name"
+    "img description"
+    "img button";
   position: relative;
   gap: 20px;
   padding: 10px;
@@ -60,7 +64,6 @@ a:hover {
   text-align: center;
   color: #abd5dc;
   text-decoration: underline #79b2bc;
-
 }
 
 .accordion-container > img {
@@ -75,20 +78,19 @@ a:hover {
   grid-area: button;
 }
 
-
 .image {
   display: block;
   width: 100%;
   height: auto;
-  transition: .5s ease;
+  transition: 0.5s ease;
   backface-visibility: hidden;
 }
 
 .hoverButton {
-  transition: .5s ease;
+  transition: 0.5s ease;
   opacity: 0;
   margin: 0;
-  position:absolute;
+  position: absolute;
   /* top: 25%;
   left: 25%;
   -ms-transform: translate(-50%, -50%);
@@ -109,11 +111,16 @@ a:hover {
   opacity: 1;
 } */
 
-
 .textBio {
+  padding: 5%;
+}
+
+#bio-background {
   color: white;
   font-size: 1.5em;
-  padding: 16px 32px;
+  background-color: #04130cc6;
+  padding: 5%;
+  /* text-align: ; */
 }
 
 .modal-content {
@@ -129,19 +136,19 @@ a:hover {
 }
 
 #scrollToTopBtn {
-  display: none; 
+  display: none;
   position: fixed;
-  bottom: 20px; 
-  right: 30px; 
-  z-index: 99; 
-  border: none; 
-  outline: none; 
-  background-color: #9FAAA6; 
-  color: white; 
-  cursor: pointer; 
-  padding: 10px; 
-  border-radius: 25px; 
-  font-size: 25px; 
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #0dcaf065;
+  /* background-color: #9FAAA6;  */
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 25px;
 }
 
 #scrollToTopBtn:hover {
@@ -150,4 +157,8 @@ a:hover {
 
 #contacts {
   padding-right: 75px;
+}
+
+#full-stack-button {
+  width: 60%;
 }
