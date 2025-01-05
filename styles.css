@@ -159,6 +159,6 @@ a:hover {
   padding-right: 75px;
 }
 
-#full-stack-button {
-  width: 60%;
+.two-buttons {
+  width: 40%;
 }
